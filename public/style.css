@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #808080;
+}
+
+.calculator {
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 25rem;
+  height: 22rem;
+  background-color: black;
+}
+
+.keypad {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.125rem;
+  justify-content: center;
+}
+
+.display {
+  border-radius: 1rem;
+  width: 100%;
+  height: 5rem;
+  background-color: #66ff99;
+  display: flex;
+  justify-content: flex-end; /* Center horizontally by moving text to the right */
+  align-items: center; /* Center vertically */
+  font-size: 2rem; /* Adjust the font size as needed */
+}
+
+.button {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 1.2rem; /* Added font size for better readability */
+}
+
+.operator {
+  background-color: #ffcc00; /* Example background color for operator buttons */
+}
+.function {
+  background-color: #007acc; /* Example background color for the equal button */
+  color: white; /* Added text color for better visibility */
+}
+.equal {
+  width: 200%;
+}
